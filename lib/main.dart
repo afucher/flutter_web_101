@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:flutter_web_101/slides/arquitetura.dart';
+import 'package:flutter_web_101/slides/habilitando_projeto.dart';
+import 'package:flutter_web_101/slides/historia.dart';
+import 'package:flutter_web_101/slides/onde_usar.dart';
 import 'package:flutter_web_101/slides/quem_sou_eu.dart';
 
 import 'slides/capa.dart';
@@ -16,7 +20,14 @@ class IntroducaoAoFlutterWeb extends StatelessWidget {
     // This is an entry point for the Flutter Deck app.
     return FlutterDeckApp(
       configuration: const FlutterDeckConfiguration(),
-      slides: const [ Capa(), QuemSouEu(), ],
+      slides: const [
+        Capa(),
+        QuemSouEu(),
+        Historia(),
+        OndeUsar(),
+        Arquitetura(),
+        HabilitandoProjeto()
+      ],
     );
   }
 }
