@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
@@ -14,18 +15,30 @@ class QuemSouEu extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
+    final theme = FlutterDeckTheme.of(context);
+    final textStyle = theme.textTheme.bodyLarge;
     return FlutterDeckSlide.split(
       leftBuilder: (context) {
-        return const Column(
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Arthur Fücher'),
-            Text('Organizador Meetup Clojure BR'),
-            Text('Developer Advocate - Nubank'),
+            Text(
+              'Arthur Fücher',
+              style: textStyle,
+            ),
+            Text(
+              'Organizador Meetup Clojure BR',
+              style: textStyle,
+            ),
+            Text(
+              'Developer Advocate - Nubank',
+              style: textStyle,
+            ),
           ],
         );
       },
       rightBuilder: (context) {
-        return const Text('Imagem linda do Arthur');
+        return Image.asset('images/me.jpg');
       },
     );
   }

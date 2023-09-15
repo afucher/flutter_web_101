@@ -11,6 +11,7 @@ class Arquitetura extends FlutterDeckSlideWidget {
 
   @override
   FlutterDeckSlide build(BuildContext context) {
-    return FlutterDeckSlide.blank(builder: (_) => const Text(''));
+    return FlutterDeckSlide.image(
+        imageBuilder: (_) => Image.asset('images/web-arch.png'));
   }
 }
