@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class Capa extends FlutterDeckSlideWidget {
-  const Capa()
+class AssuntoDeHoje extends FlutterDeckSlideWidget {
+  const AssuntoDeHoje()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/capa',
-            footer: FlutterDeckFooterConfiguration(showSlideNumbers: true),
+            route: '/assunto-de-hoje',
           ),
         );
 
@@ -14,7 +13,7 @@ class Capa extends FlutterDeckSlideWidget {
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.title(
       title: 'Introdução ao Flutter Web',
-      subtitle: 'TDC-SP 2023',
+      subtitle: 'Minha vez de conhecer vocês...',
     );
   }
 }

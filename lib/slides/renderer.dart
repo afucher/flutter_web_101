@@ -24,11 +24,15 @@ class Renderer extends FlutterDeckSlideWidget {
                 style: FlutterDeckTheme.of(context).textTheme.subtitle,
               ),
               Text(
-                'Combination of: HTML, CSS, Canvas and SVG',
+                'Combinação de: HTML, CSS, Canvas and SVG',
                 style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
               ),
               Text(
                 'Not pixel perfect',
+                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
+              ),
+              Text(
+                'Tamanho inferior de download',
                 style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
               ),
             ],
@@ -44,11 +48,15 @@ class Renderer extends FlutterDeckSlideWidget {
                 style: FlutterDeckTheme.of(context).textTheme.subtitle,
               ),
               Text(
-                'Combination of: HTML, CSS, Canvas and SVG',
+                'CanvasKit - Skia wasm: WebGL',
                 style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
               ),
               Text(
-                'Not pixel perfect',
+                'Consistente com Flutter desktop e mobile',
+                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
+              ),
+              Text(
+                'Performance melhor em contextos com maior densidade de widgets',
                 style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
               ),
             ],

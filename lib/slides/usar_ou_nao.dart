@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 
-class Capa extends FlutterDeckSlideWidget {
-  const Capa()
+class UsarOuNao extends FlutterDeckSlideWidget {
+  const UsarOuNao()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-            route: '/capa',
-            footer: FlutterDeckFooterConfiguration(showSlideNumbers: true),
+            route: '/usar-ou-nao',
           ),
         );
 
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.title(
-      title: 'Introdução ao Flutter Web',
-      subtitle: 'TDC-SP 2023',
+      title: 'Usar ou não?',
+      subtitle: 'eis a questão',
     );
   }
 }

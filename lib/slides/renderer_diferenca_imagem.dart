@@ -24,7 +24,7 @@ class RendererDiferencaVisual extends FlutterDeckSlideWidget {
                 'HTML renderer',
                 style: FlutterDeckTheme.of(context).textTheme.subtitle,
               ),
-              const FullScreenImage('images/flutter_web_renderer_html.png'),
+              const FullScreenImage('images/web-html-renderer.png'),
             ],
           ),
         );
@@ -37,8 +37,7 @@ class RendererDiferencaVisual extends FlutterDeckSlideWidget {
                 'CanvasKit renderer',
                 style: FlutterDeckTheme.of(context).textTheme.subtitle,
               ),
-              const FullScreenImage(
-                  'images/flutter_web_renderer_canvaskit.png'),
+              const FullScreenImage('images/web-canvaskit-renderer.png'),
             ],
           ),
         );

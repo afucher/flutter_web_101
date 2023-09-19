@@ -12,9 +12,16 @@ class RodandoProjeto extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.blank(
-      builder: (context) => const Center(
-        child: FlutterDeckCodeHighlight(
-          code: '''
+      builder: (context) => FlutterDeckCodeHighlightTheme(
+        data: FlutterDeckCodeHighlightThemeData(
+          textStyle:
+              FlutterDeckCodeHighlightTheme.of(context).textStyle?.copyWith(
+                    fontSize: 50,
+                  ),
+        ),
+        child: const Center(
+          child: FlutterDeckCodeHighlight(
+            code: '''
 > flutter devices
 2 connected devices:
 
@@ -24,7 +31,8 @@ Chrome (web)    • chrome • web-javascript • Google Chrome 116.0.5845.187
 
 > flutter run -d chrome
 ''',
-          language: 'shell',
+            language: 'shell',
+          ),
         ),
       ),
     );
