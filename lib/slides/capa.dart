@@ -13,6 +13,12 @@ class Capa extends FlutterDeckSlideWidget {
   @override
   FlutterDeckSlide build(BuildContext context) {
     return FlutterDeckSlide.title(
+      backgroundBuilder: (context) => Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Image.asset('images/dash.png'),
+        ],
+      ),
       title: 'Introdução ao Flutter Web',
       subtitle: 'TDC-SP 2023',
     );
