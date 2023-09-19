@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
 import 'package:flutter_web_101/slides/arquitetura.dart';
+import 'package:flutter_web_101/slides/frase_flutter_web.dart';
 import 'package:flutter_web_101/slides/habilitando_projeto.dart';
 import 'package:flutter_web_101/slides/historia.dart';
 import 'package:flutter_web_101/slides/onde_usar.dart';
 import 'package:flutter_web_101/slides/quem_sou_eu.dart';
+import 'package:flutter_web_101/slides/renderer.dart';
+import 'package:flutter_web_101/slides/renderer_comparacao.dart';
+import 'package:flutter_web_101/slides/rodando_projeto.dart';
 
 import 'slides/capa.dart';
 
@@ -24,9 +28,13 @@ class IntroducaoAoFlutterWeb extends StatelessWidget {
         Capa(),
         QuemSouEu(),
         Historia(),
-        OndeUsar(),
+        FraseFlutterWeb(),
         Arquitetura(),
-        HabilitandoProjeto()
+        HabilitandoProjeto(),
+        RodandoProjeto(),
+        Renderer(),
+        RendererComparacao(),
+        OndeUsar(),
       ],
     );
   }
