@@ -4,6 +4,7 @@ import 'package:flutter_web_101/slides/assunto_de_hoje.dart';
 import 'package:flutter_web_101/slides/contras.dart';
 import 'package:flutter_web_101/slides/onde_usar_jogos.dart';
 import 'package:flutter_web_101/slides/renderer_diferenca_imagem.dart';
+import 'package:flutter_web_101/slides/renderer_rodando.dart';
 import 'package:flutter_web_101/slides/usar_ou_nao.dart';
 import 'slides/arquitetura.dart';
 import 'slides/frase_flutter_web.dart';
@@ -42,6 +43,7 @@ class IntroducaoAoFlutterWeb extends StatelessWidget {
         Renderer(),
         RendererComparacao(),
         RendererDiferencaVisual(),
+        RendererRodando(),
         UsarOuNao(),
         Contras(),
         OndeUsar(),

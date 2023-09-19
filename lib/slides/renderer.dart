@@ -6,6 +6,7 @@ class Renderer extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/renderer',
+            steps: 3,
             header: FlutterDeckHeaderConfiguration(
               title: 'Web renderers',
             ),
@@ -21,20 +22,20 @@ class Renderer extends FlutterDeckSlideWidget {
             children: [
               Text(
                 'HTML renderer',
-                style: FlutterDeckTheme.of(context).textTheme.subtitle,
+                style: FlutterDeckTheme.of(context).textTheme.title.copyWith(
+                      decoration: TextDecoration.underline,
+                    ),
               ),
-              Text(
-                'Combinação de: HTML, CSS, Canvas and SVG',
-                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              ),
-              Text(
-                'Not pixel perfect',
-                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              ),
-              Text(
-                'Tamanho inferior de download',
-                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              ),
+              Expanded(
+                child: FlutterDeckBulletList(
+                  useSteps: true,
+                  items: const [
+                    'Combinação de: HTML, CSS, Canvas and SVG',
+                    'Not pixel perfect',
+                    'Tamanho inferior de download'
+                  ],
+                ),
+              )
             ],
           ),
         );
@@ -45,20 +46,28 @@ class Renderer extends FlutterDeckSlideWidget {
             children: [
               Text(
                 'CanvasKit renderer',
-                style: FlutterDeckTheme.of(context).textTheme.subtitle,
+                style: FlutterDeckTheme.of(context).textTheme.title.copyWith(
+                      decoration: TextDecoration.underline,
+                      decorationColor:
+                          FlutterDeckSplitSlideTheme.of(context).rightColor,
+                    ),
               ),
-              Text(
-                'CanvasKit - Skia wasm: WebGL',
-                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              ),
-              Text(
-                'Consistente com Flutter desktop e mobile',
-                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              ),
-              Text(
-                'Performance melhor em contextos com maior densidade de widgets',
-                style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
-              ),
+              Expanded(
+                child: FlutterDeckBulletListTheme(
+                  data: FlutterDeckBulletListThemeData(
+                    color: FlutterDeckSplitSlideTheme.of(context).rightColor,
+                    textStyle: FlutterDeckBulletListTheme.of(context).textStyle,
+                  ),
+                  child: FlutterDeckBulletList(
+                    useSteps: true,
+                    items: const [
+                      'CanvasKit - Skia wasm: WebGL',
+                      'Consistente com Flutter desktop e mobile',
+                      'Performance melhor em contextos com maior densidade de widgets'
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         );
