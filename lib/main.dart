@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:flutter_web_101/slides/apresentacoes.dart';
 import 'package:flutter_web_101/slides/assunto_de_hoje.dart';
 import 'package:flutter_web_101/slides/contras.dart';
 import 'package:flutter_web_101/slides/onde_usar_jogos.dart';
@@ -48,6 +49,7 @@ class IntroducaoAoFlutterWeb extends StatelessWidget {
         Contras(),
         OndeUsar(),
         OndeUsarJogos(),
+        Apresentacoes(),
         MuitoObrigado(),
       ],
     );

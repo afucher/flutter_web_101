@@ -30,9 +30,9 @@ class RendererRodando extends FlutterDeckSlideWidget {
               const Center(
                 child: FlutterDeckCodeHighlight(
                   code: '''
-        > flutter run -d chrome --web-renderer html
+> flutter run -d chrome --web-renderer html
                     
-        > flutter build --web-renderer canvaskit
+> flutter build --web-renderer canvaskit
         ''',
                   language: 'shell',
                 ),
@@ -40,7 +40,10 @@ class RendererRodando extends FlutterDeckSlideWidget {
               stepNumber == 2
                   ? Text(
                       'Opção padrão é auto',
-                      style: FlutterDeckTheme.of(context).textTheme.bodyLarge,
+                      style: FlutterDeckTheme.of(context)
+                          .textTheme
+                          .bodyLarge
+                          .copyWith(fontSize: 80.0),
                     )
                   : const SizedBox.shrink()
             ],
