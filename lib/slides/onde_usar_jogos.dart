@@ -6,9 +6,10 @@ class OndeUsarJogos extends FlutterDeckSlideWidget {
   const OndeUsarJogos()
       : super(
           configuration: const FlutterDeckSlideConfiguration(
-              route: '/onde-usar-jogos',
-              header: FlutterDeckHeaderConfiguration(
-                  title: 'Jogos (Flutter Casual Games Toolkit)')),
+            route: '/onde-usar-jogos',
+            header: FlutterDeckHeaderConfiguration(
+                title: 'Jogos (Flutter Casual Games Toolkit)'),
+          ),
         );
 
   @override
