@@ -9,6 +9,7 @@ import 'package:flutter_web_101/slides/renderer_rodando.dart';
 import 'package:flutter_web_101/slides/usar_ou_nao.dart';
 import 'slides/arquitetura.dart';
 import 'slides/frase_flutter_web.dart';
+import 'slides/google_earth.dart';
 import 'slides/habilitando_projeto.dart';
 import 'slides/historia.dart';
 import 'slides/muito_obrigado.dart';
@@ -49,6 +50,7 @@ class IntroducaoAoFlutterWeb extends StatelessWidget {
         Contras(),
         OndeUsar(),
         OndeUsarJogos(),
+        GoogleEarth(),
         Apresentacoes(),
         MuitoObrigado(),
       ],
