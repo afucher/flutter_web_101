@@ -20,7 +20,7 @@ class Capa extends FlutterDeckSlideWidget {
         ],
       ),
       title: 'Introdução ao Flutter Web',
-      subtitle: 'TDC-SP 2023',
+      subtitle: 'Meetup - The Bridge Social',
     );
   }
 }
